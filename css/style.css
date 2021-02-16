@@ -170,3 +170,15 @@ main .col-right{
 }
 /* END MAIN */
 
+/* FOOTER */
+.help{
+    position: fixed;
+    bottom: 0;
+    right: 20%;
+    z-index: 1;
+}
+.help .green-button{
+    padding: 10px;
+    border-radius: 10% 10% 0 0;
+}
+/* END FOOTER */
