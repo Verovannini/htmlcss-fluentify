@@ -13,7 +13,7 @@ body{
 
 .container{
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 img{
@@ -32,7 +32,7 @@ img{
     font-size: 12px;
 }
 
-/* Sfondo grigio da riutilizzare */
+/* Sfondo grigio e testo grigio da riutilizzare */
 .bg-gray{
     background-color: #d3d3d3;
 }
@@ -44,6 +44,10 @@ img{
     line-height: 20px;
 }
 
+/* Colonne e Clearfix */
+.col{
+    float: left;
+}
 .clearfix::after{
     content: "";
     display: table;
@@ -62,59 +66,53 @@ header{
 }
 
 /* Nav */
-nav{
+header{
     padding-top: 15px;
 }
 
-.col{
-    float: left;
-}
-
-.logo{
+header .logo{
     width: 10%;
 }
-
-.menu-center{
+header .menu-center{
     width: 50%;
     padding-left: 40px;
 }
-
-.menu-right{
+header .menu-right{
     width: 40%;
     text-align: right;
 }
 
-.menu{
+header .menu{
     list-style-type: none;
     padding-top: 6px;
 }
-.menu li{
+header .menu li{
     display: inline-block;
     margin-left: 10px;
 }
-.menu li a{
+header .menu li a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
     font-size: 10px;
 }
-.menu li a:hover{
+header .menu li a:hover{
     color: orange;
 }
 
-.login{
+header .menu .login{
     border: 1px solid white;
     padding: 7px 20px;
     border-radius: 5px;
 }
-.menu .green-button{
+header .menu .green-button{
     padding: 7px 10px;
 }
 
 /* Testo header */
 .title{
     color: white;
-    margin-top: 150px;
+    margin-top: 15%;
     width: 50%;
 }
 header h1{
@@ -124,10 +122,18 @@ header h1{
 /* END HEADER */
 
 /* MAIN */
+section{
+    padding: 30px 0;
+}
+
+.section-divider{
+    width: 95%;
+    margin: auto;
+}
+
 /* Sezione con titolo */
 .title-section{
     text-align: center;
-    padding: 30px 0;
 }
 .title-section h2{
     font-size: 21px;
@@ -135,18 +141,15 @@ header h1{
 }
 
 /* Sezione con le tre colonne */
-main .col-left{
+/* Layout a tre colonne */
+.three-col .col{
     width: 30%;
 }
-main .col-center{
-    width: 30%;
+.three-col .col:nth-child(2){
     margin: 0 5%;
 }
-main .col-right{
-    width: 30%;
-}
 
-.img-container img{
+.info .img-container img{
     height: 120px;
 }
 
@@ -155,6 +158,7 @@ main .col-right{
     text-align: center;
     line-height: 25px;
     padding: 20px 0;
+    font-size: 20px;
 }
 .content p{
     padding-top: 15px;
@@ -164,10 +168,17 @@ main .col-right{
     margin: auto;
 }
 
-.columns{
-    padding: 30px 0;
-    border-bottom: 1px solid #d3d3d3;
+/* Sezione a due colonne */
+/* Layout a due colonne */
+.two-col .col{
+    width: 50%;
 }
+
+.discover .col{
+    padding: 0 10%;
+}
+
+
 /* END MAIN */
 
 /* FOOTER */
